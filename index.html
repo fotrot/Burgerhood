@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1602831701133387');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1602831701133387&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f.fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1602831701133387');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1602831701133387&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
         body {
@@ -30,20 +31,31 @@ src="https://www.facebook.com/tr?id=1602831701133387&ev=PageView&noscript=1"
             background: #111;
             color: #fff;
             text-align: center;
+            min-height: 100vh;
         }
+
         .hero {
-            padding: 80px 20px;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-            url('https://i.imgur.com/zJhTSdV.jpeg') center/cover;
+            url('https://i.imgur.com/zJhTSdV.jpeg') center/cover no-repeat;
         }
+
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
+
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 30px;
+            max-width: 90%;
         }
+
         .btn {
             background: #25D366;
             color: #fff;
@@ -56,13 +68,26 @@ src="https://www.facebook.com/tr?id=1602831701133387&ev=PageView&noscript=1"
             transition: transform .2s, box-shadow .2s;
             box-shadow: 0 10px 25px rgba(0,0,0,.4);
         }
+
         .btn:hover {
             transform: scale(1.05);
         }
+
         .footer {
-            padding: 20px;
-            font-size: .9rem;
+            padding: 15px;
+            font-size: .85rem;
             opacity: .7;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            .btn {
+                width: 90%;
+                max-width: 320px;
+            }
         }
     </style>
 </head>
@@ -71,7 +96,7 @@ src="https://www.facebook.com/tr?id=1602831701133387&ev=PageView&noscript=1"
 
     <section class="hero">
         <h1>Burger Hood</h1>
-        <p>Envios a todo Mar del Plata</p>
+        <p>Envíos a todo Mar del Plata</p>
 
         <a 
             href="https://wa.me/5492236878311?text=Hola%20quiero%20hacer%20un%20pedido"
@@ -84,7 +109,7 @@ src="https://www.facebook.com/tr?id=1602831701133387&ev=PageView&noscript=1"
     </section>
 
     <div class="footer">
-        ©️ 2026 Burger Hood
+        © 2026 Burger Hood
     </div>
 
 </body>
